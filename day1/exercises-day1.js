@@ -58,17 +58,21 @@ let sum = 2;
 
 function sumofNumbers(num1, num2) {
     if (num1)
+}
 
 
-        console.log(sumofNumbers);
+
+console.log(sumofNumbers);
 
 //6. Create a function `sumOfLowNumbers` that takes 5 numbers and returns the sum of all numbers that are less than or equal to 6.
 
-    // let sum = 0;
-    // function sumOfLowNumbers(num1, num2, num3, num4, num5) {
-    //     if (num1 <= 6) {
-    //         sum += num1;
-    //     }
+let sum = 0;
+function sumOfLowNumbers(num1, num2, num3, num4, num5) {
+    if (num1 <= 6) {
+        sum += num1;
+    }
+
+    console.log(sumOfLowNumbers);
 
 
 //7. Go to https://pages.github.com/ and read through the tutorial to create a Github page.
