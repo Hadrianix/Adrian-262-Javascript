@@ -31,6 +31,7 @@ var quoteLength = "A ship in port is safe, but that is not what ships are for. S
 
 //Log out the length
 
+
 console.log(quoteLength.length);
 
 
@@ -38,41 +39,71 @@ console.log(quoteLength.length);
 //This new value should not _replace_ the `quote` variable's value
 //Log out the new quote
 
-var attributedQuote = "Rear Grace Hopper";
-console.log(attributedQuote);
+var attributedQuote = quote + "  - Rear admiral Grace Hopper";
 
 
 
 //4. Create a function `attribute` that takes a quote and author and returns the attributed quote.
 //Example: Takes "The key to being a successful programmer is to learn how to learn." and "- Shannon Burns" and returns "The key to being a successful programmer is to learn how to learn. - Shannon Burns"
 
-function attribute() {
 
-    return attributedQuote;
+
+
+function attribute(quote, author) {
+
+    return quote + " " + author;
 }
-console.log('The key to being a successful programmer is to learn how to learn.' + '- Shannon Burn');
+
+console.log(attribute(quote, "- Rear Admiral Grace Hopper"));
 
 //5. Create a function `sumOfNumbers` that takes 2 numbers and returns the sum of those numbers.
 
-let sum = 2;
 
 function sumofNumbers(num1, num2) {
-    if (num1)
+    return num1 + num2;
 }
 
 
 
-console.log(sumofNumbers);
+console.log(sumofNumbers(1, 5));
 
 //6. Create a function `sumOfLowNumbers` that takes 5 numbers and returns the sum of all numbers that are less than or equal to 6.
 
 let sum = 0;
 function sumOfLowNumbers(num1, num2, num3, num4, num5) {
+    var sum = 0;
+
     if (num1 <= 6) {
-        sum += num1;
+        sum = sum + num1;
+
     }
 
-    console.log(sumOfLowNumbers);
+    if (num2 <= 6) {
+        sum = sum + num2;
+
+    }
+
+    if (num3 <= 6) {
+        sum = sum + num3;
+
+    }
+
+    if (num4 <= 6) {
+        sum = sum + num4;
+
+    }
+
+    if (num5 <= 6) {
+        sum = sum + num5;
+
+    }
+
+    return sum;
+}
+
+console.log(sumOfLownumbers(5, 7, 1, 8, 3));
+
+
 
 
 //7. Go to https://pages.github.com/ and read through the tutorial to create a Github page.
