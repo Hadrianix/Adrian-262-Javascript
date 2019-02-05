@@ -121,8 +121,24 @@ console.log(shapes);
 //console.log the updated shapes array
 
 
+var triangle = {
+    base: 33,
+    height: 44
+}
+
+shapes.push(triangle)
+
+console.log(shapes);
+
+
 //12. Calculate the hypotenuse of the triangle and assign the value to a 'hypotenuse' property inside the triangle object
 //console.log the `shapes` array again.
+shapes.push((triangle.hypotenuse) = Math.sqrt((triangle.base ^ 2) * (triangle.height ^ 2)));
+
+console.log(shapes);
+
+
+
 
 // hypotenuse = the square root of (a^2 + b^2)
 // use the Math.sqrt() function and the .pow() function
