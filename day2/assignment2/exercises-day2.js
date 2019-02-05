@@ -10,20 +10,41 @@ document.write("Successfully Linked Problem Set 2");
 //(e.g., 1415926535).
 //console.log the array
 
-var numbers = [1, 4, 1, 5, 9, 2, 6, , 5, 3, 5]
+var numbers = [1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
 console.log(numbers);
 
 //2. Use bracket notation to change the `4` in the array to a `4.2`.
 //console.log the updated array
 
+numbers[1] = 4.2;
+
+console.log(numbers);
+
 
 //3. Add the number 3 to the end of the array.
 //console.log the updated array
+
+numbers.push(3);
+console.log(numbers);
+
+
 
 
 //4. Create a function named `sumOfArray` that loops through an array, and returns the sum of all the numbers that are less than or equal to 5
 
 
+
+function sumOfArray(array) {
+    var sum = 0;
+    for (let i = 0; i <= array.length; i++) {
+        if (array[i] <= 5) {
+            sum += array[i]
+        }
+    }
+    console.log(sum);
+}
+
+sumOfArray(numbers);
 
 /* You can use these to test your function:
 
@@ -37,27 +58,62 @@ sumOfArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]); // 15
 //  `x` (coordinate) of 30, `y` of 50, `width` of 100, `height` of 50
 //console.log the rectangle object
 
+var rect = {
+    x: 30,
+    y: 50,
+    width: 100,
+    height: 50
+}
+
+console.log(rect);
+
 
 //6. console.log the x- and y- coordinates of the rectangle (its location). Your output should have the format `"X, Y"`.
+
+console.log(rect.x, rect.y);
 
 
 //7. Set the rectangle's height to be the square root of its width. Use Math.sqrt()
 //Use *dot notation* to access the properties!
 
 
+rect.height = Math.sqrt(rect.width);
+
+
+
+// Math.SQRT2(rect.height);
+
+
 //8. console.log the rectangle's area (width * height). Use *dot notation* to access the properties!
 
+// console.log(rect
+
+console.log(rect.width * rect.height);
 
 //9. Create a variable `circle` that represents a circle. This should be an object
 //with properties
 //  `cx` (center-x-coordinate) of 34, 
 //  `cy` of 43, and
-//  `radius` equal to the LAST value in the (sorted) `numbers` array.
+//  `radius` equal to the LAST value in the `numbers` array.
 //console.log the circle
+
+var circle = {
+    cx: 34,
+    cy: 43,
+    radius: numbers[numbers.length - 1]
+}
+
+console.log(circle);
 
 
 //10. Create an array `shapes` that represents a list of shapes. The array should contain the rectangle and the circle objects defined above.
 //console.log the variable. Be sure to inspect it in the developer console!
+
+var shapes = ['circle', 'square', 'rectangle', 'triangle', 'oval'];
+
+console.log(shapes);
+
+
 
 
 //11. Add a new object to the `shapes` array representing a right triangle.
