@@ -67,9 +67,11 @@
 // }
 
 var pizzaRecipe = {
-    recipeName: "pepperoni",
+    recipeName: "Good Pizza",
+    letsCook: function () {
+        console.log("im hungry!" + pizzaRecipe.recipeName);
+    },
     recipeDescription: "a bunch of stuuff that will create a better pizza",
-
     ingredeints: ['dough', 'flour', 'pepperoni'],
     directions: "do this, do that, add this, cook stuff",
 
@@ -78,7 +80,7 @@ var pizzaRecipe = {
 };
 
 var recipe = pizzaRecipe.recipeDescription;
-console.log(pizzaRecipe);
+
 
 pizzaRecipe.servings = 3;
 
@@ -86,7 +88,23 @@ pizzaRecipe.rating = 8;
 
 delete pizzaRecipe.cookTime;
 
+function describeRecipe(pizzaRecipe) {
+    console.log(pizzaRecipe.recipeName);
+    console.log(pizzaRecipe.servings);
+}
 
 
+pizzaRecipe.letsCook();
+
+
+
+// var movies = [
+//     { name: 'hunter for the wilder people ', rating: 9 }
+// ];
+
+// for (var i = 0; i < movies.length; i++) {
+//     var movie = movies[i];
+//     console.log("i give", movie.name + movie.rating)
+// }
 
 
