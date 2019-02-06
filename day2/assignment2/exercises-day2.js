@@ -36,15 +36,18 @@ console.log(numbers);
 
 function sumOfArray(array) {
     var sum = 0;
-    for (let i = 0; i <= array.length; i++) {
+    for (let i = 0; i < array.length; i++) {
         if (array[i] <= 5) {
             sum += array[i]
         }
     }
-    console.log(sum);
+
+    return sum;
+
 }
 
-sumOfArray(numbers);
+console.log(sumOfArray(numbers));
+
 
 /* You can use these to test your function:
 
@@ -100,7 +103,7 @@ console.log(rect.width * rect.height);
 var circle = {
     cx: 34,
     cy: 43,
-    radius: numbers[numbers.length - 1]
+    radius: numbers.sort()[numbers.length - 1]
 }
 
 console.log(circle);
