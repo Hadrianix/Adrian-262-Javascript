@@ -5,6 +5,10 @@ body, html {
 
 }
 
+.quotes {
+    color:white;
+}
+
 
 
 h1 {
@@ -24,14 +28,15 @@ p {
 
 .hero {
 
-    /* background-image: url(./images/smoke-1001664_1280.png);
-    background-position: cover;
-    position: 50% 50%; */
     position: 100%;
     height: 100vw;
     max-height: 100%;
-    clip-path: polygon(0 0%, 100% 0, 100% 49%, 0 100%);
+    clip-path: polygon(0 0%, 100% 0, 100% 70%, 0 100%);
     background-color: black;
 
 
+}
+
+.leftText {
+    padding: 40px;
 }
