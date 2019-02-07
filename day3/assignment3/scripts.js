@@ -4,6 +4,12 @@ document.body.appendChild(myImg);
 
 myImg.style.alignItems = 'center';
 
+var myImg = new Image(400, 400);
+myImg.src = "http://www.placepuppy.net/1p/400/250x";
+document.body.appendChild(myImg);
+
+myImg.style.alignItems = 'center';
+
 document.body.style.background = "pink";
 
 var header = document.getElementById('head');
@@ -33,6 +39,12 @@ aTags.style.paddingRight = '15px';
 var para = document.getElementsByClassName('main')[1];
 
 para.style.padding = '25px';
+
+if (Modernizr.geolocation) {
+    showOffAwesomeNewFeature("http://placekitten.com/g/200/300");
+  } else {
+    getTheOldLameExperience("http://www.placepuppy.net/1p/400/250");
+  }
 
 
 
