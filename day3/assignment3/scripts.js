@@ -41,10 +41,24 @@ var para = document.getElementsByClassName('main')[1];
 para.style.padding = '25px';
 
 if (Modernizr.geolocation) {
-    showOffAwesomeNewFeature("http://placekitten.com/g/200/300");
-  } else {
-    getTheOldLameExperience("http://www.placepuppy.net/1p/400/250");
-  }
+  myImg.src = ("http://placekitten.com/g/200/300");
+} else {
+  myImg.src = ("http://www.placepuppy.net/1p/400/250");
+}
+
+// var paraBody = document.getElementsByTagName('body')[0];
+
+// var newImg = document.createElement('img');
+
+// if (Modernizr.geolocation) {
+//   newImg.src = "http://placekitten.com/g/200/300";
+// } else {
+//   newImg.src = "http://www.placepuppy.net/1p/400/250";
+// }
+
+// pageBody.appendChild(newImg);
+
+
 
 
 
