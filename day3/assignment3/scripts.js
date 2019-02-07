@@ -46,17 +46,7 @@ if (Modernizr.geolocation) {
   myImg.src = ("http://www.placepuppy.net/1p/400/250");
 }
 
-// var paraBody = document.getElementsByTagName('body')[0];
 
-// var newImg = document.createElement('img');
-
-// if (Modernizr.geolocation) {
-//   newImg.src = "http://placekitten.com/g/200/300";
-// } else {
-//   newImg.src = "http://www.placepuppy.net/1p/400/250";
-// }
-
-// pageBody.appendChild(newImg);
 
 
 
