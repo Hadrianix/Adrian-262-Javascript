@@ -2,11 +2,21 @@
 
 body, html {
     height: 100%;
+    background-color: rgba(255, 0, 0, 0.788);
 
 }
 
 .quotes {
+    display: flex;
+    padding: 40px;
     color:white;
+
+}
+
+.quote-container {
+    padding: 40px;
+    flex: right;
+    font-size: 40px;
 }
 
 
@@ -39,4 +49,15 @@ p {
 
 .leftText {
     padding: 40px;
+ 
+}
+
+.leftText h1 {
+    font-size: 110px;
+}
+
+
+
+.container {
+    color: white;
 }

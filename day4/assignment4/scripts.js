@@ -22,50 +22,47 @@
 // allQuote()
 
 // var quoteArray = ["This one has a generational shelf-life, as more and more young people sadly forget who Johnny Carson was, so we’re giving it a victory lap - The Shinning", "The final showdown with the murderous shark results in a great line from Martin Brody. - Jaws", "It’s impossible to choose just one line from this film, since so many are great, so here’s a whole boatload of them. - Army of Darkness", "When Ripley levels the playing field, all bets are off. And Mama Alien gets a scolding. - Aliens", "This is certainly rooting for the wrong person, but Freddy Krueger’s such a mouthy bastard that we had to include something from him. - A Nightmare on Elm Street"]
-// console.log("Hello World!");
-// var element = document.getElementById("test");
-// element.innerHTML = "Foo";
-/*setTimeout(runthis, 3000);
-function runthis() {
-    console.log("Running.");
-    document.getElementById('test').innerHTML = 'Foo';
-}*/
 
-var getNewQuote = function () {
-    var quotes = [{
-        text: "This one has a generational shelf-life, as more and more young people sadly forget who Johnny Carson was, so we’re giving it a victory lap",
-        movie: "The Shinning",
-    },
-    {
-        text: "The final showdown with the murderous shark results in a great line from Martin Brody",
-        movie: "jaws",
-    },
-    {
-        text: "It’s impossible to choose just one line from this film, since so many are great, so here’s a whole boatload of them.",
-        movie: "Army of Darkness",
-    },
-    {
-        text: "The final showdown with the murderous shark results in a great line from Martin Brody",
-        movie: "Aliens",
-    },
-    {
-        text: "The final showdown with the murderous shark results in a great line from Martin Brody",
-        movie: "A Nightmare on Elm Street",
-    },
-    ];
+// function newQuote() {
+//     var randomNumber = Math.floor(Math.random() * (quotes.length));
+//     document.getElementById('quote').innerHTML = quotes[randomNumber];
+// }
 
-    var quote = quotes[Math.floor(Math.random() * quotes.length)];
-    document.getElementById("quote").innerHTML =
-        '<h5>' + quote.text + '</h5>' +
-        '<p>' + '-' + '<em>' + quote.source + '</em>' + '</p>';
+// var getNewQuote = function () {
+//     var quotes = [{
+//         text: "This one has a generational shelf-life, as more and more young people sadly forget who Johnny Carson was, so we’re giving it a victory lap",
+//         movie: "The Shinning",
+//     },
+//     {
+//         text: "The final showdown with the murderous shark results in a great line from Martin Brody",
+//         movie: "jaws",
+//     },
+//     {
+//         text: "It’s impossible to choose just one line from this film, since so many are great, so here’s a whole boatload of them.",
+//         movie: "Army of Darkness",
+//     },
+//     {
+//         text: "The final showdown with the murderous shark results in a great line from Martin Brody",
+//         movie: "Aliens",
+//     },
+//     {
+//         text: "The final showdown with the murderous shark results in a great line from Martin Brody",
+//         movie: "A Nightmare on Elm Street",
+//     },
+//     ];
 
-    truncateQuote = quote.text;
-    tweet = truncateQuote.substr(0, 5)
+//     var quote = quotes[Math.floor(Math.random() * quotes.length)];
+//     document.getElementById("quote").innerHTML =
+//         '<h5>' + quote.text + '</h5>' +
+//         '<p>' + '-' + '<em>' + quote.source + '</em>' + '</p>';
+
+//     truncateQuote = quote.text;
+//     tweet = truncateQuote.substr(0, 5)
 
 
-};
+// };
 
-window.onload = getNewQuote;
+// window.onload = getNewQuote;
 
 // var getNewQuote = function () {
 //     var quotes = [
@@ -115,3 +112,54 @@ window.onload = getNewQuote;
 
 
 // window.onload = getNewQuote;
+
+// var getNewQuote = function () {
+//     var quotes = [{
+//         text: "This one has a generational shelf-life, as more and more young people sadly forget who Johnny Carson was, so we’re giving it a victory lap",
+//         movie: "The Shinning",
+//     },
+//     {
+//         text: "The final showdown with the murderous shark results in a great line from Martin Brody",
+//         movie: "jaws",
+//     },
+//     {
+//         text: "It’s impossible to choose just one line from this film, since so many are great, so here’s a whole boatload of them.",
+//         movie: "Army of Darkness",
+//     },
+//     {
+//         text: "The final showdown with the murderous shark results in a great line from Martin Brody",
+//         movie: "Aliens",
+//     },
+//     {
+//         text: "The final showdown with the murderous shark results in a great line from Martin Brody",
+//         movie: "A Nightmare on Elm Street",
+//     },
+//     ];
+
+//     function newQuote() {
+//         var randomNumber = Math.floor(Math.random() * (quotes.length));
+//         document.getElementById('newQuote').innerHTML = quotes[randomNumber];
+//     }
+
+// };
+
+
+// var quote = quotes[Math.floor(Math.random() * quotes.length)];
+// document.getElementById("newQuote").innerHTML =
+//     '<h5>' + quote.text + '</h5>' +
+//     '<p>' + '-' + '<em>' + quote.source + '</em>' + '</p>';
+
+// truncateQuote = quote.text;
+// tweet = truncateQuote.substr(0, 5)
+
+var quotes = [
+    "I'm with you 'till the end of the line. - Captain America"]
+
+
+
+
+
+function newQuote() {
+    var randomNumber = Math.floor(Math.random() * (quotes.length));
+    document.getElementById('quotes').innerHTML = quotes[randomNumber];
+}
