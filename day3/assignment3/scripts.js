@@ -41,14 +41,10 @@ var para = document.getElementsByClassName('main')[1];
 para.style.padding = '25px';
 
 if (Modernizr.geolocation) {
-  myImg.src = ("http://placekitten.com/g/200/300");
-} else {
-  myImg.src = ("http://www.placepuppy.net/1p/400/250");
-}
-
-
-
-
+    geolocation("http://placekitten.com/g/200/300");
+  } else {
+    g("http://www.placepuppy.net/1p/400/250");
+  }
 
 
 
