@@ -10,18 +10,78 @@
 </head>
 
 <body>
+    <h1>Bear Quiz</h1>
+    <form action="" name="bearQ1" required>
 
-    <form action="" name="quiz">
-        <h1>Quiz</h1>
         <p>
-            Name of a group of bears
+            <label for="bearGroup">
+                <h2>Whats a group of bears called?</h2>
+            </label>
         </p>
 
         <p>
             Sloth: <input type="radio" name="answer1">
         </p>
 
+        <p>
+            Grist: <input type="radio" name="answer2">
+        </p>
+
+        <p>
+            Clowder: <input type="radio" name="answer3">
+        </p>
+
+        <p>
+            Band: <input type="radio" name="answer4">
+        </p>
+
+
+        <input type="submit">
     </form>
+    <form action="" name="bearQ2">
+        <p>
+            <label for="dangerBear">
+                <h2>Which type of bear is largest?</h2>
+            </label>
+        </p>
+        <input type="text" name="" id="" pattern="Polar Bear|polar bear|Polar bear">
+        <input type="submit">
+    </form>
+
+    <form action="" name="bearQ3">
+        <p>
+            <label for="dangerBear">
+                <h2>What color is Polar bears fur?</h2>
+            </label>
+        </p>
+
+        <p>
+            Black: <input type="checkbox">
+        </p>
+        <p>
+            Pink: <input type="checkbox">
+        </p>
+
+        <p>
+            Blue: <input type="checkbox">
+        </p>
+
+        <p>
+            None of the above: <input type="checkbox">
+        </p>
+        <input type="submit">
+    </form>
+
+    <form action="" name="bearQ4">
+        <label for="smallBear">
+            <h2>Smallest Bear?</h2>
+        </label>
+        <input type="text" required pattern="Sunbear|Malayan sun bear|sun bear">
+        <input type="submit">
+
+    </form>
+
+
 
     <script src="scripts.js"></script>
 </body>
