@@ -19,3 +19,26 @@ $(document).ready(function () {
 
 });
 
+$('button').on('click', function (event) {
+    console.log('button');
+
+    var red = $('body');
+    red.css('background-color', "red");
+
+    console.log(event.target);
+
+
+})
+
+$('#submit').on('click', function (event) {
+    console.log(event);
+
+})
+
+$("form").on('submit', function (event) {
+
+})
+
+
+
+
