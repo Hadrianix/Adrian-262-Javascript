@@ -39,6 +39,7 @@
 // }
 
 // document.getElementById("submit").addEventListener("click", changeBackground, false)
+
 document.bgColor = localStorage.color;
 
 function changeBackground() {
@@ -55,4 +56,46 @@ function changeBackground() {
 
 document.getElementById("submit2").addEventListener("click", changeBackground, false)
 
+fetch('http://jsonplaceholder.typicode.com/users')
+    .then(function (response) {
+        if (!response.ok) {
+            throw Error(response.statusText);
+        }
+        return response.json();
+    })
+    .then(function (data) {
+        console.log(data);
+    })
+    .catch(function (error) {
+        console.log(error);
+    })
 
+
+
+
+// // Create content we are going to send
+
+// var content = {
+//     title: "whoa",
+//     body: "testing",
+//     userId: 1
+// }
+
+// //fetch URL
+
+// fetch('http://jsonplaceholder.typicode.com/users', {
+//     //set method
+//     method: 'POST',
+//     //set headers
+//     headers: {
+//         'content-type': 'application/json'
+//     },
+
+//     body: JSON.stringify(content)
+// })
+//     .then(function (response) {
+//         return response.json();
+//     })
+//     .then(function (data) {
+//         console.log(data);
+//     })
