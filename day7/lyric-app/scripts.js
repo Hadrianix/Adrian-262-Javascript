@@ -7,8 +7,8 @@ submitButton.addEventListener("click", function (event) {
 
     var songArtist = document.getElementById('songArtist').value;
     var songName = document.getElementById('songName').value;
-    var songURL = "https://api.lyrics.ovh/v1/" + songArtist + "/" + songName
-    var lyricArea = document.getElementById('lyricArea')
+    var songURL = "https://api.lyrics.ovh/v1/" + songArtist + "/" + songName;
+    var lyricArea = document.getElementById('lyricArea');
 
     fetch(songURL)
         .then(function (response) {
