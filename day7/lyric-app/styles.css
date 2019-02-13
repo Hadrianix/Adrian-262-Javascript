@@ -1,0 +1,12 @@
+.content {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.content h1 {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
