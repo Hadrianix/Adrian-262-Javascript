@@ -62,3 +62,27 @@ const fibonacci = n => {
 
 
 console.log(fibonacci(9));
+
+let multiply = (a, b = 1) => {
+    return a * b;
+
+}
+
+console.log(multiply(5, 4));
+// console.log(multiply(4));
+// console.log(multiply());
+
+let array = [2, 3, 4, 1];
+
+for (let value of array) {
+
+    console.log(value);
+}
+
+function product(...numbers) {
+
+    return numbers.reduce((currentProduct, number) => currentProduct * number, 1);
+}
+console.log(product(3, 4, 5));
+console.log(product(3, 4, 5, 6));
+console.log(product(1, 2, 3, 4, 5, 6));
