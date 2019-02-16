@@ -34,8 +34,8 @@
         <div class="container">
             
             <div class="buttons">
-                <button onClick="lastQuote()">Last Quote</button>
-                <button onClick="newQuote()">Next Quote</button>
+                <button id="prev" class="newQuote">Last Quote</button>
+                <button id="next" class="newQuote">Next Quote</button>
             </div>
         </div>
     
@@ -44,9 +44,15 @@
 
     <!-- Main -->
     
-        <div class="quote-container">
-            <div id="quotes"></div>
+        <div class="quote-container" id="quotesBox">
+            <div id="quotesBox" class="quotes"></div>
+
+            <span id="tweet-span" class="tweet-span"><a class="twitter-share-button" href="https://twitter.com/intent/tweet"
+                data-size="large">
+              Tweet</a>
+            </span>
         </div>
+        
    
 
 
@@ -67,6 +73,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
+    <script src='https://platform.twitter.com/widgets.js'></script>
     <script src="scripts.js"></script>
 </body>
 
