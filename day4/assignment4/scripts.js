@@ -38,7 +38,7 @@ function createQuote () {
         document.querySelector('#quotesBox').innerHTML = theQuote.quote + '<span class="quote">';
         document.querySelector('#quotesBox, #author').innerHTML = theQuote.movie;
         document.querySelector('#quotesBox, #img').innerHTML = theQuote.img;
-        // newTweet();
+
     }
 
     function theNextQuote() {
@@ -63,7 +63,10 @@ function createQuote () {
 
     document.getElementById('next').addEventListener("click", theNextQuote);
     document.getElementById('prev').addEventListener("click", thePrevQuote);
+    document.getElementById('img').addEventListener("click", images);
+    
     quoteShow();
+   
     var time = setInterval(theNextQuote, 30000);
 }
 
