@@ -35,7 +35,8 @@ function createQuote () {
 
     function quoteShow() {
         var theQuote = quotes[counter];
-        document.querySelector('#quotesBox').innerHTML = theQuote.quote + '<span class="quote-author"> &mdash; <a id="tweet" class="chosen-link" href="' + theQuote.link + '">' + theQuote.movie + '</a></span>';
+        document.querySelector('#quotesBox').innerHTML = theQuote.quote;
+        document.querySelector('#quotesBox, #author').innerHTML = theQuote.movie;
         newTweet();
     }
 
@@ -72,3 +73,4 @@ function createQuote () {
 
 createQuote();
 
+///document.querySelector('#quotesBox').innerHTML = theQuote.quote + '<span class="quote-author"> &mdash; <a id="tweet" class="chosen-link" href="' + theQuote.link + '">' + theQuote.movie + '</a></span>';
