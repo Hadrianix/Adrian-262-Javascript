@@ -14,80 +14,83 @@
     <form action="" name="bearQuiz" id="bearQuiz" required>
 
 
-
-        <h2>Whats are a group of bears called?</h2>
-
-
-
-        <p>
-            Sloth: <input type="radio" name="group" value="yes" id="group">
-        </p>
-
-        <p>
-            Grist: <input type="radio" name="group" value="no" id="group">
-        </p>
-
-        <p>
-            Clowder: <input type="radio" name="group" value="no" id="group">
-        </p>
-
-        <p>
-            Band: <input type="radio" name="group" value="no" id="group">
-        </p>
+        <fieldset>
+            <h2>Whats are a group of bears called?</h2>
 
 
 
-        <h2>Which type of bear is largest?</h2>
+            <p>
+                Sloth: <input type="radio" name="group" value="yes" id="group">
+            </p>
+
+            <p>
+                Grist: <input type="radio" name="group" value="no" id="group">
+            </p>
+
+            <p>
+                Clowder: <input type="radio" name="group" value="no" id="group">
+            </p>
+
+            <p>
+                Band: <input type="radio" name="group" value="no" id="group">
+            </p>
+
+            <button name="next1" class="nextButton"></button>
+        </fieldset>
+
+        <fieldset>
+            <h2>Which type of bear is largest?</h2>
 
 
-        <input type="text" name="largeBear" id="" pattern="Polar Bear|polar bear|Polar bear">
+            <input type="text" name="largeBear" id="" pattern="Polar Bear|polar bear|Polar bear">
+        </fieldset>
 
 
+        <fieldset>
+            <p>
+                <label for="BearColor">
+                    <h2>What color is Polar bears fur?</h2>
+                </label>
+            </p>
+
+            <p>
+                Black: <input type="checkbox" name="bearfur1" value="no" id="bearFur">
+            </p>
+            <p>
+                Pink: <input type="checkbox" name="bearfur2" value="no" id="bearFur">
+            </p>
+
+            <p>
+                Blue: <input type="checkbox" name="bearfur3" value="no" id="bearFur">
+            </p>
+
+            <p>
+                None of the above: <input type="checkbox" name="bearfur4" value="yes" id="bearFur">
+            </p>
+        </fieldset>
 
 
-        <p>
-            <label for="BearColor">
-                <h2>What color is Polar bears fur?</h2>
-            </label>
-        </p>
+        <fieldset>
+            <h2>Smallest Bear?</h2>
 
-        <p>
-            Black: <input type="checkbox" name="bearfur1" value="no" id="bearFur">
-        </p>
-        <p>
-            Pink: <input type="checkbox" name="bearfur2" value="no" id="bearFur">
-        </p>
+            <input type="text" name="smallBear" id="smallBear" required
+                pattern="Sunbear|Malayan sun bear|sun bear|Sun bear">
 
-        <p>
-            Blue: <input type="checkbox" name="bearfur3" value="no" id="bearFur">
-        </p>
+            </p>
+            <h2>Bite force of a Grizzly Bear?</h2>
+            <p>
 
-        <p>
-            None of the above: <input type="checkbox" name="bearfur4" value="yes" id="bearFur">
-        </p>
+                1,160psi: <input type="radio" name="biteForce" id="biteForce">
+            </p>
 
+            <p>
 
-
-
-        <h2>Smallest Bear?</h2>
-
-        <input type="text" name="smallBear" id="smallBear" required
-            pattern="Sunbear|Malayan sun bear|sun bear|Sun bear">
-
-        </p>
-        <h2>Bite force of a Grizzly Bear?</h2>
-        <p>
-
-            1,160psi: <input type="radio" name="biteForce" id="biteForce">
-        </p>
-
-        <p>
-
-            600psi: <input type="radio" name="biteForce" id="biteForce">
-        </p>
-        <p>
-            <input type="submit" id="submit" name="submit">
-        </p>
+                600psi: <input type="radio" name="biteForce" id="biteForce">
+            </p>
+            <p>
+                <input type="submit" id="submit" name="submit">
+            </p>
+        </fieldset>
     </form>
 
 
