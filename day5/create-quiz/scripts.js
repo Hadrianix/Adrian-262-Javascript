@@ -3,7 +3,7 @@ var next = document.querySelectorAll(".nextButton");
 for (let i = 0; i < next.length; i++) {
     next[i].addEventListener("click", function(event) {
         event.currentTarget.parentNode.style.display = "none";
-        event.currentTarget.parentNode.nextElementsSibling.style.display = "block";
+        event.currentTarget.parentNode.nextElementSibling.style.display = "block";
     })
 }
 
