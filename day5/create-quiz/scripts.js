@@ -35,6 +35,8 @@ submitButton.addEventListener("click", function (event) {
         score++
     }
 
+    document.getElementById('score').innerHTML = "Your Score is " + score + "/5!";
+
 
 
 
