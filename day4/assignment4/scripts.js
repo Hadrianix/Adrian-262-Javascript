@@ -20,18 +20,7 @@ function createQuote () {
 
 
     var counter = 0;
-        var images = [
-            './images/the-shinning_1280x720.jpg',
-            './images/jaws.jpg',
-            './images/army.jpg',
-            './images/aliens.jpg',
-            './images/exorcist.jpg',
-            './images/para.jpg',
-            './images/Black-Christmas-Eye.jpg',
-            './images/childs.jpg',
-            './images/sematary.jpg',
-            './images/halloween.jpg'
-        ];
+    
     
         function quoteShow() {
         var theQuote = quotes[counter];
@@ -63,7 +52,7 @@ function createQuote () {
 
     document.getElementById('next').addEventListener("click", theNextQuote);
     document.getElementById('prev').addEventListener("click", thePrevQuote);
-    document.getElementById('img').addEventListener("click", images);
+ 
     
     quoteShow();
    
