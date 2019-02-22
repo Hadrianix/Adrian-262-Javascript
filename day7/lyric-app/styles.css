@@ -28,6 +28,11 @@ form {
     padding: 25px;
 }
 
+input {
+    
+    border-radius: 10px;
+}
+
 
 
 .sideSection {
