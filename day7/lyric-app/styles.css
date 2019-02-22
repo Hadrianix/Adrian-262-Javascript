@@ -30,9 +30,6 @@ form {
     align-items: flex-start;
 }
 
-/* #text {
-    font-family: 'PT Sans', sans-serif;
-} */
 
 .sideSection {
     display: flex;
@@ -58,10 +55,7 @@ form {
     /* border: solid yellow 1px; */
 }
 
-/* .box {
 
-    border: solid yellow 1px;
-} */
 
 
 .submit {
@@ -71,7 +65,7 @@ form {
 
 
 .lyricArea {
-
+    font-family: 'PT Sans', sans-serif;
     text-align: center;
     margin-left: 800px;
     padding: 25px;
