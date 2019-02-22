@@ -98,7 +98,6 @@ p {
     .lyricArea {
         display: flex;
         justify-content: center;
-        text-align: center;
         margin: 0;
         padding: 40px;
         padding-top:50px;
