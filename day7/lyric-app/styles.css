@@ -49,6 +49,8 @@ form {
 
 .lyricArea {
     /* text-align: center; */
+    text-align: center;
+    margin-left: 800px;
     padding: 25px;
 }
 
