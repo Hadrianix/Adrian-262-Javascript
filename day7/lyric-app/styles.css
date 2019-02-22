@@ -8,6 +8,7 @@
 h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+    text-align: center;
     padding: 25px;
     padding-bottom: 0;
     color: yellow;
@@ -117,7 +118,7 @@ input {
         justify-content: center;
         margin: 0;
         padding: 40px;
-        padding-top:50px;
+        padding-top:75px;
     }
     
 
