@@ -11,11 +11,15 @@ h1 {
     padding: 25px;
     padding-bottom: 0;
     color: white;
+    font-size: 50px;
 }
 
+
 p {
-    color: yellow;
+    color: #FF1D8E;
     font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    padding: 10px;
 }
 
 /* Main Section */
@@ -24,11 +28,6 @@ form {
     padding: 25px;
 }
 
-.header h1 {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
 
 
 .sideSection {
@@ -40,7 +39,7 @@ form {
     width: 800px;
     height: 100%;
     background-color: rgb(20, 18, 18);
-    box-shadow: 5px 10px yellow;
+    box-shadow: 15px 30px #FF1D8E;
 }
   
     
@@ -65,10 +64,10 @@ form {
 
 
 .lyricArea {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
     margin-left: 800px;
-    padding: 25px;
+    padding: 30px;
 }
 
 p {
@@ -88,7 +87,8 @@ p {
         display: flex;
         justify-content: center;
         position: relative;
-        
+        box-shadow: 0px 30px #FF1D8E;
+
     }
 
     .lyrics {
@@ -100,7 +100,8 @@ p {
         justify-content: center;
         text-align: center;
         margin: 0;
-        padding: 25px;
+        padding: 40px;
+        padding-top:50px;
     }
     
 
