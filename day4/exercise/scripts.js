@@ -27,30 +27,30 @@
 
 // setInterval(time, 1000);
 
-// var cat = document.getElementById('cat');
-// var walkForward = true;
-// var catTimer = setInterval(catWalk, 5);
+var cat = document.getElementById('cat');
+var walkForward = true;
+var catTimer = setInterval(catWalk, 5);
 
-// function catWalk() {
-//     if (cat.offsetLeft >= document.body.offsetWidth - cat.offsetWidth) {
-//         walkForward = false;
-//     }
+function catWalk() {
+    if (cat.offsetLeft >= document.body.offsetWidth - cat.offsetWidth) {
+        walkForward = false;
+    }
 
-//     if (cat.offsetLeft <= 0) {
-//         walkForward = true;
-//     }
+    if (cat.offsetLeft <= 0) {
+        walkForward = true;
+    }
 
-//     if (walkForward) {
+    if (walkForward) {
 
-//         cat.style.transform = "scaleX(1)";
-//         cat.style.left = cat.offsetLeft + 1 + "px";
-//     } else {
+        cat.style.transform = "scaleX(1)";
+        cat.style.left = cat.offsetLeft + 1 + "px";
+    } else {
 
-//         cat.style.transform = "scaleX(-1)";
+        cat.style.transform = "scaleX(-1)";
 
-//         cat.style.left = cat.offsetLeft - 1 + "px";
-//     }
-// }
+        cat.style.left = cat.offsetLeft - 1 + "px";
+    }
+}
 
 // var button = document.getElementById('myBtn');
 
