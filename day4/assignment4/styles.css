@@ -15,16 +15,17 @@ body, html {
 }
 
 .quote-container {
-    /* background-color: rgba(255, 0, 0, 0.788); */
-    padding: 40px;
+    background-color: rgba(255, 0, 0, 0.788);
+    padding-top: 0px;
     flex: right;
     font-size: 40px;
     text-align: center;
+    padding: 30px;
 
-    padding-bottom: 60px;
+    padding-bottom: 35px;
     text-align: center;
     /* flex: right; */
-    font-size: 30px;
+    font-size: 25px;
     color: white;
 
 }
@@ -32,12 +33,24 @@ body, html {
 
 
 h1 {
+    background: url(./grungebackground\ copy.jpg) no-repeat center center;
+	background-size: cover;
+	color: #fff;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+    padding: 0;
     font-family: 'Staatliches', cursive;
     color: red;
 }
 
 h2 {
     font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 p {
@@ -54,13 +67,18 @@ p {
     clip-path: polygon(50% 95%, 0 0, 100% 0);
     /* clip-path: polygon(0 0%, 100% 0, 100% 70%, 0 100%); */
     background-color: black;
+    background-size: cover;
 
 
 }
 
+.img {
+    height: 100%;
+}
+
 .leftText {
-    padding: 40px;
- 
+    
+    
 }
 
 .leftText h1 {
@@ -70,6 +88,7 @@ p {
 
 .leftText h2 {
     text-align: center;
+    font-size: 30px;
 }
 
 
@@ -79,8 +98,10 @@ p {
 }
 
 .buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     text-align: center;
-    margin-right: 10px;
     border: none;
     background: none;
 }
@@ -89,3 +110,29 @@ p {
     border: none;
     background: none;
 }
+
+.author {
+    text-align: center;
+    color: red;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    font-size: 25px;
+}
+
+.twitter {
+    
+    text-align: center;
+    background-color:rgba(255, 0, 0, 0.788);
+}
+
+button {
+   height: 75px;
+   width: 75px;
+   font-size: 75px;
+    cursor: pointer;
+    border: none;
+    color: red;
+    background: none;
+}
+
+button:focus {outline:0;}

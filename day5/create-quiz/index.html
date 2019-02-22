@@ -11,84 +11,100 @@
 
 <body>
     <h1>Bear Quiz</h1>
-    <form action="" name="bearQuiz" id="bearQuiz" required>
+    <form action="" name="bearQuiz" id="bearQuiz">
+
+
+        <fieldset>
+            <h2>Whats are a group of bears called?</h2>
 
 
 
-        <h2>Whats are a group of bears called?</h2>
+            <p>
+                Sloth: <input type="radio" name="group" value="yes" id="group">
+            </p>
+
+            <p>
+                Grist: <input type="radio" name="group" value="no" id="group">
+            </p>
+
+            <p>
+                Clowder: <input type="radio" name="group" value="no" id="group">
+            </p>
+
+            <p>
+                Band: <input type="radio" name="group" value="no" id="group">
+            </p>
+
+            <button name="next1" class="nextButton">Next</button>
+        </fieldset>
+
+        <fieldset>
+            <h2>Which type of bear is largest?</h2>
 
 
+            <input type="text" name="largeBear" id="" pattern="Polar Bear|polar bear|Polar bear">
 
-        <p>
-            Sloth: <input type="radio" name="group" value="yes" id="group">
-        </p>
-
-        <p>
-            Grist: <input type="radio" name="group" value="no" id="group">
-        </p>
-
-        <p>
-            Clowder: <input type="radio" name="group" value="no" id="group">
-        </p>
-
-        <p>
-            Band: <input type="radio" name="group" value="no" id="group">
-        </p>
+            <button name="next2" class="nextButton">Next</button>
+        </fieldset>
 
 
+        <fieldset>
+            <p>
+                <label for="BearColor">
+                    <h2>What color is Polar bears fur?</h2>
+                </label>
+            </p>
 
-        <h2>Which type of bear is largest?</h2>
+            <p>
+                Black: <input type="checkbox" name="bearfur1" value="no" id="bearFur">
+            </p>
+            <p>
+                Pink: <input type="checkbox" name="bearfur2" value="no" id="bearFur">
+            </p>
 
+            <p>
+                Blue: <input type="checkbox" name="bearfur3" value="no" id="bearFur">
+            </p>
 
-        <input type="text" name="largeBear" id="" pattern="Polar Bear|polar bear|Polar bear">
+            <p>
+                None of the above: <input type="checkbox" name="bearfur4" value="yes" id="bearFur">
+            </p>
 
+            <button name="next3" class="nextButton">Next</button>
+        </fieldset>
+            
+        <fieldset>
+            <h2>Smallest Bear?</h2>
 
+            <input type="text" name="smallBear" id="smallBear" required
+                pattern="Sunbear|Malayan sun bear|sun bear|Sun bear">
 
+            </p>
+            <button name="next4" class="nextButton">Next</button>
+        </fieldset>
+        <fieldset>
+          
+            <h2>Bite force of a Grizzly Bear?</h2>
+            <p>
 
-        <p>
-            <label for="BearColor">
-                <h2>What color is Polar bears fur?</h2>
-            </label>
-        </p>
+                1,160psi: <input type="radio" name="biteForce" id="biteForce">
+            </p>
 
-        <p>
-            Black: <input type="checkbox" name="bearfur1" value="no" id="bearFur">
-        </p>
-        <p>
-            Pink: <input type="checkbox" name="bearfur2" value="no" id="bearFur">
-        </p>
+            <p>
 
-        <p>
-            Blue: <input type="checkbox" name="bearfur3" value="no" id="bearFur">
-        </p>
+                600psi: <input type="radio" name="biteForce" id="biteForce">
+            </p>
 
-        <p>
-            None of the above: <input type="checkbox" name="bearfur4" value="yes" id="bearFur">
-        </p>
-
-
-
-
-        <h2>Smallest Bear?</h2>
-
-        <input type="text" name="smallBear" id="smallBear" required
-            pattern="Sunbear|Malayan sun bear|sun bear|Sun bear">
-
-        </p>
-        <h2>Bite force of a Grizzly Bear?</h2>
-        <p>
-
-            1,160psi: <input type="radio" name="biteForce" id="biteForce">
-        </p>
-
-        <p>
-
-            600psi: <input type="radio" name="biteForce" id="biteForce">
-        </p>
+            
+            <button name="next5" class="nextButton">Next</button>
+        </fieldset>
         <p>
             <input type="submit" id="submit" name="submit">
         </p>
+
     </form>
+
+    <div class="score" id="score"></div>
 
 
 
