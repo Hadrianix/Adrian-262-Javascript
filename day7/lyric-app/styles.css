@@ -96,6 +96,8 @@ input {
     display: none;
 }
 
+/* Responsive */
+
 
 @media(max-width: 1150px) {
     
@@ -119,6 +121,14 @@ input {
         margin: 0;
         padding: 40px;
         padding-top:75px;
+    }
+
+    .submit {
+        margin-top: 50px;
+    }
+
+    h1 {
+        padding: 0;
     }
     
 
