@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+}
+
+fieldset {
+    text-align: center;
+}
+
+fieldset:nth-child(n+2) {
+    display:none;
+  }
+
+.submit {
+    text-align: center;
+}
