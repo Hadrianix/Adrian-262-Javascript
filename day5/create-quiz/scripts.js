@@ -88,11 +88,11 @@ quiz.submit.addEventListener("click", function(event) {
     var score = 0;
 
 
-    if (group[0].checked) {
+    if (quiz.group[0].checked) {
         score++
     }
 
-    if (largeBear.value == "Polar Bear" || largeBear.value == "polar bear") {
+    if (quiz.largeBear.value == "Polar Bear" || largeBear.value == "polar bear") {
         score++
     }
 
@@ -100,23 +100,23 @@ quiz.submit.addEventListener("click", function(event) {
     //     score++
     // }
 
-    if (!bearfur1.checked || !bearfur2.checked || !bearfur3.checked) {
+    if (quiz.bearfur1.checked || !bearfur2.checked || !bearfur3.checked) {
         score++;
     }
 
-    if (smallBear.value == "sunbear" || smallBear.value == "Sun Bear" || smallBear.value == "sun bear" || smallBear.value == "Sun bear") {
+    if (quiz.smallBear.value.toLowerCase() === "sunbear"|| smallBear.value.toLowerCase() == "sun bear") {
+        score++;
+      }
+
+    if (quiz.biteForce[0].checked) {
         score++
     }
 
-    if (biteForce[0].checked) {
+    if (quiz.sense[2].checked) {
         score++
     }
 
-    if (sense[2].checked) {
-        score++
-    }
-
-    if (common[0].checked) {
+    if (quiz.common[0].checked) {
         score++
     }
 
