@@ -88,7 +88,7 @@ quiz.submit.addEventListener("click", function(event) {
     var score = 0;
 
 
-    if (quiz.group[0].checked) {
+    if (quiz.group.checked[0]) {
         score++
     }
 

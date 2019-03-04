@@ -14,7 +14,7 @@ fieldset:nth-child(n+2) {
     text-align: center;
 }
 
-input[type="submit"] {
+/* input[type="submit"] {
     margin: 20px 0;
     display:block;
-  }
+  } */
