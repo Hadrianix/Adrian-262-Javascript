@@ -17,6 +17,8 @@ bearQuiz.submit.addEventListener("click", function(event){
         var bearFur = document.bearQuiz.bearFur;
         var smallBear = document.bearQuiz.smallBear
         var biteForce = document.bearQuiz.biteForce
+        var sense = document.bearQuiz.sense
+        var common = document.bearQuiz.common
 
         var score = 0;
 
@@ -28,7 +30,7 @@ bearQuiz.submit.addEventListener("click", function(event){
             score++
         }
     
-        if (bearQuiz.bearfur4.checked) {
+        if (bearQuiz.bearFur.checked) {
             score++
         }
     
@@ -43,8 +45,16 @@ bearQuiz.submit.addEventListener("click", function(event){
         if (biteForce[0].checked) {
             score++
         }
+
+        if (sense[2].checked) {
+            score++
+        }
+
+        if (common[0].checked) {
+            score++
+        }
         
-        document.getElementById('score').innerHTML = "Your score is " + score + "/5!"
+        document.getElementById('score').innerHTML = "Your score is " + score + "/6!"
         
     } else {
         for (var x = 0; x < next.length; x++) {
