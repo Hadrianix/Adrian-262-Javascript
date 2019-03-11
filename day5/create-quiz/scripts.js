@@ -100,13 +100,13 @@ quiz.submit.addEventListener("click", function(event) {
     //     score++
     // }
 
-    if (quiz.bearfur1.checked || !bearfur2.checked || !bearfur3.checked) {
-        score++;
+    if (quiz.bearFur1.checked && quiz.bearFur2.checked && !quiz.bearFur3.checked) {
+      score++;
     }
 
-    if (quiz.smallBear.value.toLowerCase() === "sunbear"|| smallBear.value.toLowerCase() == "sun bear") {
-        score++;
-      }
+    if (quiz.smallBear.value.toLowerCase() === "sunbear" || "sun bear") {
+      score++;
+    }
 
     if (quiz.biteForce[0].checked) {
         score++

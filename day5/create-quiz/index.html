@@ -14,7 +14,86 @@
     <form action="" name="bearQuiz" id="bearQuiz">
 
 
-        <fieldset>
+            <fieldset>
+                <legend>What is a group of bears called?</legend>
+                    
+                <label for="bearGroup">Sloth:</label><input type="radio" name="bearGroup" value="true" id="bearQuiz" required>
+                    
+                <label for="bearGroup">Grist:</label><input type="radio" name="bearGroup" value="true" id="bearQuiz" required>
+
+                <label for="bearGroup">Clowder:</label><input type="radio" name="bearGroup" value="true" id="bearQuiz" required>
+
+                <label for="bearGroup">Band:</label><input type="radio" name="bearGroup" value="true" id="bearQuiz" required>
+
+                <button type="button" name="next1" class="nextButton">Next</button>
+            </fieldset>
+
+            
+            <fieldset>
+                <label for="largeBear">Which type of bear is largest?</label>
+                <input type="text" name="largeBear" id="largeBear" required>
+                <button type="button" name="next2" class="nextButton">Next</button>
+            </fieldset>
+
+            <fieldset>
+                <legend>What color is Polar Bear fur?</legend>
+                
+                <label for="bearFur">Black: </label><input type="checkbox" value="feet" id="bearFur1" name="bearFur1">
+                
+                <label for="bearFur">Pink: </label><input type="checkbox" value="feet" id="bearFur1" name="bearFur2">
+                
+                <label for="bearFur">Blue: </label><input type="checkbox" value="feet" id="bearFur1" name="bearFur3">
+                
+                <label for="bearFur">None of the above: </label><input type="checkbox" value="feet" id="bearFur4" name="bearFur4">
+
+                <button type="button" name="next3" class="nextButton">Next</button>
+            </fieldset>
+
+            <fieldset>
+                    <label for="smallBear">Smallest bear?</label>
+                    <input type="text" name="smallBear" id="smallBear" required>
+                      <button type="button" name="next4" class="nextButton">Next</button>
+            </fieldset>
+
+
+            
+
+            <fieldset>
+                    <legend>Bite force of a Grizzly Bear?</legend>
+                        
+                    <label for="bearGroup">1600psi: </label><input type="radio" name="biteForce" value="true" id="" required>
+                        
+                    <label for="bearGroup">600psi:</label><input type="radio" name="biteForce" value="true" id="biteForce" required>
+    
+                    <label for="bearGroup">300psi:</label><input type="radio" name="biteForce" value="true" id="biteForce" required>
+    
+
+    
+                    <button type="button" name="next1" class="nextButton">Next</button>
+                </fieldset>
+
+                <fieldset>
+
+                        <h2>Bite force of a Grizzly Bear?</h2>
+                        <p>
+            
+                            1,160psi: <input type="radio" name="biteForce" id="biteForce">
+                        </p>
+            
+                        <p>
+            
+                            600psi: <input type="radio" name="biteForce" id="biteForce">
+                        </p>
+            
+            
+                        <button name="next5" class="nextButton">Next</button>
+                    </fieldset>
+            
+
+ 
+
+
+        <!-- <fieldset>
             <h2>Whats are a group of bears called?</h2>
 
 
@@ -36,19 +115,19 @@
             </p>
 
             <button name="next1" class="nextButton">Next</button>
-        </fieldset>
+        </fieldset> -->
 
-        <fieldset>
+        <!-- <fieldset>
             <h2>Which type of bear is largest?</h2>
 
 
             <input type="text" name="largeBear" id="" pattern="Kodiak Bear|kodiak bear|Kodiak bear|Kodiak|kodiak">
 
             <button name="next2" class="nextButton">Next</button>
-        </fieldset>
+        </fieldset> -->
 
 
-        <fieldset>
+        <!-- <fieldset>
             <p>
                 <label for="bearfur1">
                     <h2>What color is Polar bears fur?</h2>
@@ -71,8 +150,8 @@
             </p>
 
             <button name="next3" class="nextButton">Next</button>
-        </fieldset>
-
+        </fieldset> -->
+<!-- 
         <fieldset>
             <h2>Smallest Bear?</h2>
 
@@ -80,7 +159,7 @@
 
             </p>
             <button name="next4" class="nextButton">Next</button>
-        </fieldset>
+        </fieldset> -->
         <fieldset>
 
             <h2>Bite force of a Grizzly Bear?</h2>
@@ -100,7 +179,7 @@
 
         <fieldset>
 
-            <h2>Bears strongest scent?</h2>
+            <h2>Bears strongest senses?</h2>
             <p>
 
                 Hearing <input type="radio" name="sense" id="sense">
@@ -196,3 +275,45 @@
 </body>
 
 </html>
+
+
+<!-- <h1>Do you know anything about cats?</h1>
+<h2>Take this quiz and find out!</h2>
+<form action="" name="quizForm">
+  <fieldset>
+    <legend>1. True or False: Cats talk to each other by meowing.</legend>
+    <label for="cat1True">True</label><input type="radio" value="true" id="cat1True" name="catTalk" required>
+      <label for="cat1False">False</label><input type="radio" id="cat1False" name="catTalk" value="false">
+    <button type="button" name="next1" class="next-button">Next</button>
+  </fieldset>
+  <fieldset>
+  <label for="catGroup">2. What is a group of cats called?</label>
+  <input type="text" name="catGroup" id="catGroup" required>
+    <button type="button" name="next2" class="next-button">Next</button>
+  </fieldset>
+  <fieldset>
+    <legend>3. Which of these are well know cat myths?</legend>
+    <label for="catMyth1">Cats always land on their feet.</label><input type="checkbox" value="feet" id="catMyth1" name="catMyth1">
+    <label for="catMyth2">Cats have nine lives.</label><input type="checkbox" value="nineLives" id="catMyth2" name="catMyth2">
+    <label for="catMyth3">Don't throw the cat out with the bath water.</label><input type="checkbox" value="bathwater" id="catMyth3" name="catMyth3">
+    <button type="button" name="next3" class="next-button">Next</button>
+  </fieldset>
+  <fieldset>
+    <legend>4. True or False: Cats can usually squeeze their bodies through any space their head fits.</legend>
+    <label for="catSqueezeTrue">True</label><input type="radio" name="catSqueeze" value="true" id="catSqueezeTrue" required>
+    <label for="catSqueezeFalse">False</label><input type="radio" name="catSqueeze" value="false" id="catSqueezeFalse">
+    
+    <button type="button" name="next4" class="next-button">Next</button>
+  </fieldset>
+  <fieldset>
+    <legend>5. True or False: Cats have a third eyelid.</legend>
+    <label for="catEyelidTrue">True</label><input type="radio" name="catEyelid" id="catEyelidTrue" value="true" required>
+    <label for="catEyelidFalse">False</label><input type="radio" name="catEyelid" value="false" id="catEyelidFalse">
+    
+  <input type="submit" value="See Your Score" name="submit">
+
+  </fieldset>
+  
+</form>
+
+<div id="score" class="score"><div><p id="results"></p><p class="refresh-message">Refresh to try again.</p></div></div> -->
