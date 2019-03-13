@@ -1,12 +1,147 @@
-.content {
-    margin: 0 auto;
-    max-width: 900px;
+/* General Styles */
+
+* {
+    margin: 0;
+    
 }
 
-.content h1 {
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
     text-align: center;
+    padding: 25px;
+    padding-bottom: 0;
+    color: yellow;
+    font-size: 50px;
 }
+
+
+p {
+    color: #FF1D8E;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* Main Section */
 
 form {
-    text-align: center;
+    padding: 25px;
 }
+
+input {
+    
+    border-radius: 10px;
+}
+
+
+
+.sideSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    position: fixed;
+    width: 800px;
+    height: 100%;
+    background-color: rgb(20, 18, 18);
+    box-shadow: 15px 0px #FF1D8E;
+
+}
+  
+    
+
+
+
+
+.lyrics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    height: 500px;
+    width: 500px;
+
+}
+
+
+
+
+.submit {
+    cursor: pointer;
+    margin: 10px;
+}
+
+
+.lyricArea {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-left: 800px;
+    padding: 30px;
+}
+
+.submit {
+    background-color: yellow;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+
+.topSection {
+    display: none;
+}
+
+/* Responsive */
+
+
+@media(max-width: 1150px) {
+    
+    .sideSection {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        box-shadow: 0px 30px #FF1D8E;
+
+    }
+
+    .lyrics {
+        border: none;
+    }
+
+    .lyricArea {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 40px;
+        padding-top:75px;
+    }
+
+    .submit {
+        margin-top: 50px;
+    }
+
+    h1 {
+        padding: 0;
+    }
+    
+
+}
+
+button:focus {outline:0;}
+
+input:focus {outline:0;}
+
+
+
+/* font-family: 'Raleway', sans-serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+
