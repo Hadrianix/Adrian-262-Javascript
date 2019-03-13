@@ -1,10 +1,14 @@
-
+body {
+    max-width: 50%;
+    margin: auto;
+}
 h1 {
     text-align: center;
 }
 
 fieldset {
     text-align: center;
+    border: none;
 }
 
 fieldset:nth-child(n+2) {
@@ -15,7 +19,20 @@ fieldset:nth-child(n+2) {
     text-align: center;
 }
 
-/* input[type="submit"] {
-    margin: 20px 0;
-    display:block;
-  } */
+
+input[type="submit"] {
+    /* margin: 20px 0; */
+    /* display:flex; */
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score {
+    text-align: center;
+}
+
+.results {
+    text-align: center;
+}
