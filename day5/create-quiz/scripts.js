@@ -132,9 +132,13 @@ quiz.submit.addEventListener("click", function(event) {
         score++;
     }
 
+    if (quiz.carnivores.value === "false") {
+        score++;
+    }
+
 
     document.getElementById('score').style.display = "flex";
-    document.getElementById('results').innerHTML = "Your score is " + score + "/8!"
+    document.getElementById('results').innerHTML = "Your score is " + score + "/9!"
   } else {
     for (var x = 0; x < nextButtons.length; x++) {
       nextButtons[x].style.display = "none";
