@@ -1,4 +1,4 @@
-var submitButton = document.bearQuiz.submit;
+var submitButton = document.playQuiz.submit;
 
 submitButton.addEventListener("click", function (event) {
     event.preventDefault();
@@ -11,7 +11,7 @@ submitButton.addEventListener("click", function (event) {
     var smallBear = document.bearQuiz.smallBear
     var biteForce = document.bearQuiz.biteForce
 
-    if (group[0].checked) {
+    if (group[3].checked) {
         score++
     }
 
@@ -34,6 +34,8 @@ submitButton.addEventListener("click", function (event) {
     if (biteForce[0].checked) {
         score++
     }
+
+    document.getElementById('results').innerHTML = "Your score is " + score + "/5!"
 
 
 

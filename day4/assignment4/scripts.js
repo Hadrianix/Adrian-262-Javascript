@@ -1,5 +1,3 @@
-
-
 function createQuote () {
     var quotes = [
         {quote: "Heeeere's Johnny!", movie: "The Shinning", img: "./images/the-shinning_1280x720.jpg"}, 
@@ -20,7 +18,8 @@ function createQuote () {
 
 
     var counter = 0;
-        var images = [
+        
+    var images = [
             './images/the-shinning_1280x720.jpg',
             './images/jaws.jpg',
             './images/army.jpg',
