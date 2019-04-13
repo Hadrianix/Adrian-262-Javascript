@@ -1,3 +1,5 @@
+@import "compass/css3";
+
 body {
     max-width: 50%;
     margin: auto;
@@ -76,4 +78,5 @@ input[type="radio"], input[type="checkbox"] {
     
   }
 
-  
+
+
