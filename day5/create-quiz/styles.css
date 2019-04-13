@@ -1,6 +1,15 @@
+@import "compass/css3";
+
 body {
     max-width: 50%;
     margin: auto;
+    font-family: sans-serif;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9), 
+      rgba(255, 255, 255, 0.9)
+    ),url('http://1.bp.blogspot.com/-o-Z0gVaz7oA/VmWZVPsIobI/AAAAAAAAkk0/bIE_Qm-9Zc4/s1600/digital_cat_pattern_paper.jpg');
+  background-size: contain;
+  background-position: 100%;
 }
 h1 {
     text-align: center;
@@ -15,19 +24,12 @@ fieldset:nth-child(n+2) {
     display:none;
   }
 
-.submit {
-    text-align: center;
-}
+
 
 
 input[type="submit"] {
-    /* margin: 20px 0; */
-    /* display:flex; */
-    /* text-align: center; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    display:block;
+  }
 
 .score {
     text-align: center;
@@ -36,5 +38,47 @@ input[type="submit"] {
 .results {
     text-align: center;
 }
+
+
+.bearQuiz {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    display: block;
+    background-color: aquamarine;
+    padding: 30px;
+}
+
+p {
+    width: 100%;
+
+    text-align: center;
+    /* position: absolute;
+    top: 350px; */
+}
+
+.submitbtn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    display: none;
+     
+      position: relative;
+      display: inline-block;
+      padding-left: 1.5em;
+      margin-right: 2em;
+      cursor: pointer;
+      line-height: 1em;
+      transition: all .3s ease-in-out;
+      
+      
+    
+  }
+
+
 
 
