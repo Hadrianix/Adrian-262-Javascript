@@ -6,10 +6,7 @@ body {
     max-width: 50%;
     margin: auto;
     font-family: sans-serif;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.9), 
-      rgba(255, 255, 255, 0.9)
-    ),url('http://1.bp.blogspot.com/-o-Z0gVaz7oA/VmWZVPsIobI/AAAAAAAAkk0/bIE_Qm-9Zc4/s1600/digital_cat_pattern_paper.jpg');
+  background-color: #dd0150;
   background-size: contain;
   background-position: 100%;
 }
@@ -23,10 +20,11 @@ h1 {
     text-align: center;
     width: 100%;
     margin: 0;
+    margin-top: 100px;
 }
 
 h2 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', sans-serif; 
     font-size: 25px;
     margin-top: 0;
     margin-bottom: 10px;
@@ -50,6 +48,8 @@ button {
 /* Fieldset */
 
 fieldset {
+    border: black solid;
+    border-radius: 5px;
     text-align: center;
     border: none;
 }
@@ -82,6 +82,8 @@ input[type="submit"] {
     background-color: aquamarine;
     padding: 30px;
     padding-top: 0;
+    border-radius: solid black 2px;
+    border: black;
 
 }
 
@@ -128,6 +130,19 @@ input[type="radio"], input[type="checkbox"] {
       
       
     
+  }
+
+  .bearBox {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: aquamarine;
+      padding: 30px;
+      padding-bottom: 0; 
+  }
+  .bearPic {
+      text-align: center;
   }
 
 
