@@ -20,7 +20,7 @@ h1 {
     text-align: center;
     width: 100%;
     margin: 0;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 
 h2 {
@@ -137,9 +137,9 @@ input[type="radio"], input[type="checkbox"] {
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: aquamarine;
-      padding: 30px;
-      padding-bottom: 0; 
+      background-color: #dd0150;
+      padding: 0;
+      padding-left: 30px; 
   }
   .bearPic {
       text-align: center;
