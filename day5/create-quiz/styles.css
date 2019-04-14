@@ -1,5 +1,7 @@
 @import "compass/css3";
 
+/* General Styles */
+
 body {
     max-width: 50%;
     margin: auto;
@@ -12,8 +14,38 @@ body {
   background-position: 100%;
 }
 h1 {
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 50px;
+    background-color: aquamarine;
+    padding: 30px;
+    padding-bottom: 0;
+    padding-top: 0;
     text-align: center;
+    width: 100%;
+    margin: 0;
 }
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+}
+
+
+button {
+    font-family: 'Oswald', sans-serif;
+}
+
+#submit {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Fieldset */
 
 fieldset {
     text-align: center;
@@ -42,11 +74,12 @@ input[type="submit"] {
 
 .bearQuiz {
     width: 100%;
-    height: 500px;
+    height: 100%;
     margin: 0 auto;
     display: block;
     background-color: aquamarine;
     padding: 30px;
+    padding-top: 0;
 }
 
 p {
@@ -57,12 +90,27 @@ p {
     top: 350px; */
 }
 
+legend {
+    padding: 1rem;
+
+}
+
+
+
+
+
 .submitbtn {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.nextButton {
+    margin-top: 2rem;
+}
+
+
 
 input[type="radio"], input[type="checkbox"] {
     display: none;
@@ -81,4 +129,17 @@ input[type="radio"], input[type="checkbox"] {
 
 
 
+/* font-family: 'Dokdo', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Anton', sans-serif;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Acme', sans-serif;
+font-family: 'Righteous', cursive;
+font-family: 'Fascinate Inline', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Paytone One', sans-serif; */
 
+  
+
+  
