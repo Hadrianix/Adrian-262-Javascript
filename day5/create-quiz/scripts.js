@@ -75,7 +75,7 @@ quiz.submit.addEventListener("click", function (event) {
 
 
     document.getElementById('score').style.display = "block";
-    document.getElementById('results').innerHTML = "Your score is " + score + "/10!"
+    document.getElementById('results').innerHTML = "Your bear score is " + score + "/10!"
 
   } else {
     for (var x = 0; x < nextButtons.length; x++) {

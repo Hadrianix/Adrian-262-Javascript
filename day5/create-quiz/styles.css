@@ -209,6 +209,16 @@ legend {
   }
 
   input[type="text"] {
+    border-radius: 30px;
+    border-color: #dd0150;
+    background-color: aquamarine;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+
+  .score {
+      font-family: 'Oswald', sans-serif;
+      font-size: 30px;
 
   }
 
