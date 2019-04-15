@@ -38,7 +38,7 @@ function createQuote() {
         var theQuote = quotes[counter];
         document.querySelector('#quotesBox').innerHTML = theQuote.quote + '<span class="quote">';
         document.querySelector('#quotesBox, #author').innerHTML = theQuote.movie;
-        document.querySelector('#quotesBox, #img').images.innerHTML = theQuote.img;
+        document.getElementById('img').innerHTML = images
 
     }
 
