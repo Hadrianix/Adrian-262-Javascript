@@ -62,9 +62,13 @@ quiz.submit.addEventListener("click", function (event) {
       score++;
     }
 
+    if (quiz.feed.value === "false") {
+      score++;
+    }
+
 
     document.getElementById('score').style.display = "block";
-    document.getElementById('results').innerHTML = "Your score is " + score + "/9!"
+    document.getElementById('results').innerHTML = "Your score is " + score + "/10!"
   } else {
     for (var x = 0; x < nextButtons.length; x++) {
       nextButtons[x].style.display = "none";

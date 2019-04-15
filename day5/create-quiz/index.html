@@ -14,7 +14,7 @@
 
 <body>
     <div class="bearBox">
-        <img src="./images/bear2-01.png" class="bear" style="width: 200px; height: 200px;" alt="">
+        <img src="./images/bear-01.png" class="bear" style="width: 200px; height: 200px;" alt="">
     </div>
 
     <h1>Bear Quiz</h1>
@@ -144,15 +144,22 @@
         </fieldset>
 
         <fieldset>
-            <h2>1. True or False: All bears are carnivores</h2>
+
+            <h2>True or False: All bears are carnivores</h2>
             <label for="bearTrue">True</label><input type="radio" class="radio" value="true" id="bearTrue"
                 name="carnivores" required>
             <label for="bearFalse">False</label><input type="radio" class="radio" value="false" id="bearFalse"
                 name="carnivores" value="false">
             <br>
             <button type="button" name="next9" class="nextButton">Next</button>
+
         </fieldset>
 
+        <fieldset>
+            <h2>Should you feed bears</h2>
+            <label for="feedTrue">True</label><input type="radio" value="true" id="feedTrue" name="feed">
+            <label for="feedFalse">False</label><input type="radio" value="false" id="feedFalse" name="feed">
+        </fieldset>
         <br>
         <div class="submitbtn">
             <input type="submit" id="submit" value="See Your Score" name="submit" class="submit">
@@ -161,19 +168,17 @@
 
 
 
-        <div id="score" class="score">
-            <div>
-                <p id="results"></p>
-                <p class="refresh-message">Refresh to try again.</p>
-            </div>
-        </div>
-
 
 
     </form>
 
 
-
+    <div id="score" class="score">
+        <div>
+            <p id="results"></p>
+            <!-- <p class="refresh-message">Refresh to try again.</p> -->
+        </div>
+    </div>
 
 
 
