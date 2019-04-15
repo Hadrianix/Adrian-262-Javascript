@@ -2,12 +2,19 @@
 
 var quiz = document.bearQuiz;
 var nextButtons = document.querySelectorAll(".nextButton");
-for (let i = 0; i < nextButtons.length; i++) {
+for (let i = 0; i < nextButtons.length - 1; i++) {
   nextButtons[i].addEventListener("click", function (event) {
     event.currentTarget.parentNode.style.display = "none";
     event.currentTarget.parentNode.nextElementSibling.style.display = "block";
   })
 }
+nextButtons[nextButtons.length - 1].addEventListener("click", function (event) {
+  event.currentTarget.parentNode.style.display = "none";
+  event.currentTarget.parentNode.nextElementSibling.style.display = "block";
+  document.getElementById('submit').style.display = "inline-block";
+})
+
+
 
 quiz.submit.addEventListener("click", function (event) {
 
@@ -69,6 +76,7 @@ quiz.submit.addEventListener("click", function (event) {
 
     document.getElementById('score').style.display = "block";
     document.getElementById('results').innerHTML = "Your score is " + score + "/10!"
+
   } else {
     for (var x = 0; x < nextButtons.length; x++) {
       nextButtons[x].style.display = "none";
