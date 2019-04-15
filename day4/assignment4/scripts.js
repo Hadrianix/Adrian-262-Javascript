@@ -13,14 +13,7 @@ function createQuote() {
 
     ];
 
-
-
-
-
-    var counter = 0;
-
-
-    var images = [
+    var nextImages = [
         './images/the-shinning_1280x720.jpg',
         './images/jaws.jpg',
         './images/army.jpg',
@@ -34,11 +27,30 @@ function createQuote() {
     ];
 
 
+
+
+    var counter = 0;
+
+    // document.getElementById('quoteBox').innerHTML = quotes;
+    // document.getElementById('author').innerHTML = movie;
+    // document.getElementById('images').scr = nextImages;
+
+
+
+
+
+
+
+
+
+
     function quoteShow() {
         var theQuote = quotes[counter];
         document.querySelector('#quotesBox').innerHTML = theQuote.quote + '<span class="quote">';
-        document.querySelector('#quotesBox, #author').innerHTML = theQuote.movie;
-        document.getElementById('img').innerHTML = images
+        document.querySelector('#quotesBox, #author, images').innerHTML = theQuote.movie;
+        document.querySelector('#images').innerHTML = theQuote.img;
+
+
 
     }
 
@@ -50,6 +62,7 @@ function createQuote() {
         }
         quoteShow();
 
+
     }
 
     function thePrevQuote() {
@@ -59,6 +72,8 @@ function createQuote() {
             counter = quotes.length - 1;
         }
         quoteShow();
+
+
     }
 
 
