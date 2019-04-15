@@ -2,7 +2,7 @@
 
 body, html {
     height: 100%;
-    background-color: rgba(255, 0, 0, 0.788);
+    background-color: red;
 
 }
 
@@ -15,7 +15,7 @@ body, html {
 }
 
 .quote-container {
-    background-color: rgba(255, 0, 0, 0.788);
+    background-color:red;
     padding-top: 0px;
     flex: right;
     font-size: 40px;
@@ -82,7 +82,7 @@ p {
 }
 
 .leftText h1 {
-    font-size: 110px;
+    font-size: 140px;
     text-align: center;
 }
 
@@ -98,7 +98,7 @@ p {
 }
 
 .buttons {
-    display: flex;
+    /* display: flex; */
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
@@ -114,15 +114,19 @@ p {
 .author {
     text-align: center;
     color: red;
-    padding-top: 100px;
-    padding-bottom: 60px;
-    font-size: 25px;
+    /* top: 257px;
+    right: 905px;
+    position: fixed; */
+    /* padding-top: 100px;
+    padding-bottom: 60px; */
+    padding-top: 30px;
+    font-size: 30px;
 }
 
 .twitter {
     
     text-align: center;
-    background-color:rgba(255, 0, 0, 0.788);
+    background-color:red;
 }
 
 button {
