@@ -5,180 +5,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link
+        href="https://fonts.googleapis.com/css?family=Acme|Anton|Dokdo|Fascinate+Inline|Oswald|Paytone+One|Permanent+Marker|Righteous|Roboto+Slab|Shadows+Into+Light"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Quiz</title>
+    <title>Bear Quiz</title>
 </head>
 
 <body>
+    <div class="bearBox">
+        <img src="./images/bear2-01.png" class="bear" style="width: 200px; height: 200px;" alt="">
+    </div>
+
     <h1>Bear Quiz</h1>
-    <form action="" name="bearQuiz" id="bearQuiz">
+
+
+
+    <form action="" name="bearQuiz" id="bearQuiz" class="bearQuiz">
 
 
         <fieldset>
-            <h2>Whats are a group of bears called?</h2>
+            <h2>What is a group of bears called?</h2>
 
+            <label for="bearGroup">Sloth</label><input type="radio" class="radio" name="bearGroup" id="bearQuiz"
+                required>
 
+            <label for="bearGroup">Grist</label><input type="radio" class="radio" name="bearGroup" id="bearQuiz"
+                required>
 
-            <p>
-                Sloth: <input type="radio" name="group" value="yes" id="group">
-            </p>
+            <label for="bearGroup">Clowder</label><input type="radio" class="radio" name="bearGroup" id="bearQuiz"
+                required>
 
-            <p>
-                Grist: <input type="radio" name="group" value="no" id="group">
-            </p>
-
-            <p>
-                Clowder: <input type="radio" name="group" value="no" id="group">
-            </p>
-
-            <p>
-                Band: <input type="radio" name="group" value="no" id="group">
-            </p>
-
-            <button name="next1" class="nextButton">Next</button>
-        </fieldset>
-
-        <fieldset>
-            <h2>Which type of bear is largest?</h2>
-
-
-            <input type="text" name="largeBear" id="" pattern="Kodiak Bear|kodiak bear|Kodiak bear|Kodiak|kodiak">
-
-            <button name="next2" class="nextButton">Next</button>
+            <label for="bearGroup">Band</label><input type="radio" class="radio" name="bearGroup" id="bearQuiz"
+                required>
+            <br>
+            <button type="button" name="next1" class="nextButton">Next</button>
         </fieldset>
 
 
         <fieldset>
-            <p>
-                <label for="bearfur1">
-                    <h2>What color is Polar bears fur?</h2>
-                </label>
-            </p>
+            <h2 for="largeBear" class="large">Which type of bear is largest?</h2>
+            <br>
 
-            <p>
-                Black: <input type="checkbox" name="bearfur1" value="no" id="bearFur1">
-            </p>
-            <p>
-                Pink: <input type="checkbox" name="bearfur1" value="no" id="bearFur2">
-            </p>
 
-            <p>
-                Blue: <input type="checkbox" name="bearfur1" value="no" id="bearFur3">
-            </p>
-
-            <p>
-                None of the above: <input type="checkbox" name="bearfur1" value="yes" id="bearFur4">
-            </p>
-
-            <button name="next3" class="nextButton">Next</button>
+            <input type="text" name="largeBear" id="largeBear" required>
+            <br>
+            <button type="button" name="next2" class="nextButton">Next</button>
         </fieldset>
 
         <fieldset>
-            <h2>Smallest Bear?</h2>
+            <h2>What color is Polar Bear fur?</h2>
 
-            <input type="text" name="smallBear" id="smallBear">
+            <label for="bearFur">Black </label><input type="checkbox" class="checkbox" id="bearFur1" name="bearFur1">
 
-            </p>
-            <button name="next4" class="nextButton">Next</button>
+            <label for="bearFur">Pink </label><input type="checkbox" class="checkbox" id="bearFur2" name="bearFur2">
+
+            <label for="bearFur">Blue </label><input type="checkbox" class="checkbox" id="bearFur3" name="bearFur3">
+
+            <label for="bearFur">None of the above </label><input type="checkbox" class="checkbox" id="bearFur4"
+                name="bearFur4">
+            <br>
+            <button type="button" name="next3" class="nextButton">Next</button>
         </fieldset>
-        <fieldset>
 
+        <fieldset>
+            <h2 for="smallBear">Smallest bear?</h2>
+
+
+            <input type="text" name="smallBear" id="smallBear" required>
+            <br>
+            <button type="button" name="next4" class="nextButton">Next</button>
+        </fieldset>
+
+
+
+
+        <fieldset>
             <h2>Bite force of a Grizzly Bear?</h2>
-            <p>
 
-                1,160psi: <input type="radio" name="biteForce" id="biteForce">
-            </p>
+            <label for="biteForce1">1600psi</label><input type="radio" class="radio" name="biteForce" id="biteForce1"
+                required>
 
-            <p>
+            <label for="biteForce2">600psi</label><input type="radio" class="radio" name="biteForce" id="biteForce2"
+                required>
 
-                600psi: <input type="radio" name="biteForce" id="biteForce">
-            </p>
+            <label for="biteForce3">300psi</label><input type="radio" class="radio" name="biteForce" id="biteForce3"
+                required>
+
+            <br>
+
+            <button type="button" name="next5" class="nextButton">Next</button>
+        </fieldset>
 
 
-            <button name="next5" class="nextButton">Next</button>
+        <fieldset>
+            <h2>What is a bears strongest sense?</h2>
+
+            <label for="sense">Smell </label><input type="radio" class="radio" name="sense" id="sense" required>
+
+            <label for="sense">Hearing</label><input type="radio" class="radio" name="sense" id="sense" required>
+
+            <label for="sense">Sight</label><input type="radio" class="radio" name="sense" id="sense" required>
+
+
+            <br>
+            <button type="button" name="next6" class="nextButton">Next</button>
         </fieldset>
 
         <fieldset>
+            <h2>What is the most common type of bear?</h2>
 
-            <h2>Bears strongest scent?</h2>
-            <p>
+            <label for="common">Grizzly Bear </label><input type="radio" class="radio" name="common" id="common"
+                required>
 
-                Hearing <input type="radio" name="sense" id="sense">
-            </p>
+            <label for="common">Brown Bear</label><input type="radio" class="radio" name="common" id="common" required>
 
-            <p>
+            <label for="common">Polar Bear</label><input type="radio" class="radio" name="common" id="common" required>
 
-                Sight <input type="radio" name="sense" id="sense">
-            </p>
-
-            <p>
-
-                Smell <input type="radio" name="sense" id="sense">
-            </p>
+            <label for="common">Panda Bear</label><input type="radio" class="radio" name="common" id="common" required>
 
 
-            <button name="next6" class="nextButton">Next</button>
+            <br>
+            <button type="button" name="next7" class="nextButton">Next</button>
+        </fieldset>
+
+
+        <fieldset>
+            <h2>How many pounds of food can a Grizzly Bear eat in the summer?</h2>
+            <label for="food">100 Pounds</label><input type="checkbox" class="checkbox" id="food1" name="food1">
+            <label for="food">40 pounds</label><input type="checkbox" class="checkbox" id="food2" name="food2">
+            <label for="food">60 pounds</label><input type="checkbox" class="checkbox" id="food3" name="food3">
+            <label for="food">25 pounds</label><input type="checkbox" class="checkbox" id="food4" name="food4">
+            <br>
+            <button type="button" name="next8" class="nextButton">Next</button>
         </fieldset>
 
         <fieldset>
-
-            <h2>Most common bear?</h2>
-            <p>
-
-                Black Bears <input type="radio" name="common" id="common">
-            </p>
-
-            <p>
-
-                Grizzly Bears <input type="radio" name="common" id="common">
-            </p>
-
-            <p>
-
-                Brown Bears <input type="radio" name="common" id="common">
-            </p>
-
-            <p>
-
-                Polar Bears <input type="radio" name="common" id="common">
-            </p>
-
-
-            <button name="next7" class="nextButton">Next</button>
+            <h2>1. True or False: All bears are carnivores</h2>
+            <label for="bearTrue">True</label><input type="radio" class="radio" value="true" id="bearTrue"
+                name="carnivores" required>
+            <label for="bearFalse">False</label><input type="radio" class="radio" value="false" id="bearFalse"
+                name="carnivores" value="false">
+            <br>
+            <button type="button" name="next9" class="nextButton">Next</button>
         </fieldset>
 
-        <fieldset>
-            <p>
-                <label for="bearFood">
-                    <h2>How many pounds of food can a Grizzly Bear eat in the summer?</h2>
-                </label>
-            </p>
+        <br>
+        <div class="submitbtn">
+            <input type="submit" id="submit" value="See Your Score" name="submit" class="submit">
+        </div>
 
-            <p>
-                100 pounds: <input type="checkbox" name="food" value="no" id="food">
-            </p>
-            <p>
-                40 pounds: <input type="checkbox" name="food" value="no" id="food">
-            </p>
 
-            <p>
-                60 pounds: <input type="checkbox" name="food" value="no" id="food">
-            </p>
 
-            <p>
-                25 pounds: <input type="checkbox" name="food" value="yes" id="food">
-            </p>
 
-            <button name="next8" class="nextButton">Next</button>
-        </fieldset>
-        <p>
-            <input type="submit" id="submit" name="submit">
-        </p>
+
+
+
 
     </form>
-
-    <div class="score" id="score"></div>
-
 
     <div id="score" class="score">
         <div>
@@ -186,7 +170,10 @@
             <p class="refresh-message">Refresh to try again.</p>
         </div>
     </div>
-    <!-- <p class="refresh-message">Refresh to try again.</p></div></div> -->
+
+
+
+
 
 
 

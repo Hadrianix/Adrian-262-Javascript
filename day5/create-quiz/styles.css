@@ -1,20 +1,163 @@
+@import "compass/css3";
+
+/* General Styles */
+
+body {
+    max-width: 50%;
+    margin: auto;
+    font-family: sans-serif;
+  background-color: #dd0150;
+  background-size: contain;
+  background-position: 100%;
+}
 h1 {
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 50px;
+    background-color: aquamarine;
+    padding: 30px;
+    padding-bottom: 0;
+    padding-top: 20px;
     text-align: center;
+    width: 100%;
+    margin: 0;
+    /* margin-top: 100px; */
 }
 
+h2 {
+    font-family: 'Oswald', sans-serif; 
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+}
+
+
+button {
+    font-family: 'Oswald', sans-serif;
+}
+
+#submit {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Fieldset */
+
 fieldset {
+    border: black solid;
+    border-radius: 5px;
     text-align: center;
+    border: none;
 }
 
 fieldset:nth-child(n+2) {
     display:none;
   }
 
-.submit {
+
+
+
+input[type="submit"] {
+    display:block;
+  }
+
+.score {
     text-align: center;
 }
 
-/* input[type="submit"] {
-    margin: 20px 0;
-    display:block;
-  } */
+.results {
+    text-align: center;
+}
+
+
+.bearQuiz {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+    background-color: aquamarine;
+    padding: 30px;
+    padding-top: 0;
+    border-radius: solid black 2px;
+    border: black;
+
+}
+
+p {
+    width: 100%;
+
+    text-align: center;
+    /* position: absolute;
+    top: 350px; */
+}
+
+legend {
+    padding: 1rem;
+
+}
+
+
+
+
+
+.submitbtn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nextButton {
+    margin-top: 2rem;
+}
+
+
+
+input[type="radio"], input[type="checkbox"] {
+    display: none;
+     
+      position: relative;
+      display: inline-block;
+      padding-left: 1.5em;
+      margin-right: 2em;
+      cursor: pointer;
+      line-height: 1em;
+      transition: all .3s ease-in-out;
+      
+      
+    
+  }
+
+  .bearBox {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #dd0150;
+      padding: 0;
+      padding-left: 30px; 
+  }
+  .bearPic {
+      text-align: center;
+  }
+
+
+
+/* font-family: 'Dokdo', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Anton', sans-serif;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Acme', sans-serif;
+font-family: 'Righteous', cursive;
+font-family: 'Fascinate Inline', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Paytone One', sans-serif; */
+
+  
+
+  
