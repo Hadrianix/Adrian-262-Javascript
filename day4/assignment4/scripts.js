@@ -1,11 +1,11 @@
 function createQuote() {
     var quotes = [
-        { quote: "Heeeere's Johnny!", movie: "The Shinning", img: "./images/the-shinning_1280x720.jpg" },
+        { quote: "Heeeere's Johnny!", movie: "The Shinning", img: "./images/shinning.jpg" },
         { quote: "Is that $3,000 bounty on in cash or check?", movie: "Jaws", img: "./images/jaws.jpg" },
         { quote: "Well hello, Mr. Fancy Pants - Army of Darkness", movie: "Army of Darkness", img: "./images/army.jpg" },
         { quote: "Get away from her you bitch", movie: "Aliens", img: "./images/aliens.jpg" },
         { quote: "What looked like morning was the beginning of endless night", movie: "The Exorcist", img: "./images/exorcist.jpg" },
-        { quote: "You cannot run from this-it will follow you. It may lay dormant for years. Something may trigger it to become more active and it may over time reach out and communicate with you", movie: "Paranormal Activity", img: "./images/para.jpg" },
+        { quote: "You cannot run from this-it will follow you. It may lay dormant for years. Something may trigger it to become more active and it may over time reach out and communicate with you", movie: "Paranormal Activity", img: "./images/para.jpeg" },
         { quote: "They're coming from inside the house!", movie: "Black Christmas", img: "./images/Black-Christmas-Eye.jpg" },
         { quote: "Hi, I'm Chucky. Wanna play?", movie: "Child's Play", img: "./images/childs.jpg" },
         { quote: "Do you know what a graveyard is? It's when the dead speaks!", movie: "Pet Sematary", img: "./images/sematary.jpg" },
@@ -13,18 +13,18 @@ function createQuote() {
 
     ];
 
-    var nextImages = [
-        './images/the-shinning_1280x720.jpg',
-        './images/jaws.jpg',
-        './images/army.jpg',
-        './images/aliens.jpg',
-        './images/exorcist.jpg',
-        './images/para.jpg',
-        './images/Black-Christmas-Eye.jpg',
-        './images/childs.jpg',
-        './images/sematary.jpg',
-        './images/halloween.jpg'
-    ];
+    // var nextImages = [
+    //     './images/the-shinning_1280x720.jpg',
+    //     './images/jaws.jpg',
+    //     './images/army.jpg',
+    //     './images/aliens.jpg',
+    //     './images/exorcist.jpg',
+    //     './images/para.jpg',
+    //     './images/Black-Christmas-Eye.jpg',
+    //     './images/childs.jpg',
+    //     './images/sematary.jpg',
+    //     './images/halloween.jpg'
+    // ];
 
 
 
@@ -36,23 +36,47 @@ function createQuote() {
     // document.getElementById('images').scr = nextImages;
 
 
+    // PRINT BOXES ONTO SCREEN
+
+    // for (var i = 0; i < results.length; i++) {
+    //     var result = results[i];
+    //     console.log(result);
+    //     var markup = `
+    //        <a href="${result.url}"  class="box">
+    //        <img src="../images/${result.image}" class="box-image">
+    //        </a>
+    //        ` ;
+    //     filterGrid.innerHTML += markup;
+    // }
 
 
+    // window.onload(quoteShow)
 
-
-
+    var hero = document.getElementById('hero');
 
 
 
     function quoteShow() {
+        images.innerHTML = "";
+        console.log(hero);
         var theQuote = quotes[counter];
         document.querySelector('#quotesBox').innerHTML = theQuote.quote + '<span class="quote">';
         document.querySelector('#quotesBox, #author, images').innerHTML = theQuote.movie;
-        document.querySelector('#images').innerHTML = theQuote.img;
+        // document.querySelector('#images').innerHTML = theQuote.img;
+        let i = counter;
+        let markup =
+            `<a href="#" class="box">
+        <img src="${quotes[i].img}"
+        </a>
+        `;
+
+        hero.style.backgroundImage = `url(${quotes[i].img})`;
 
 
 
     }
+
+
 
     function theNextQuote() {
         if (counter < quotes.length - 1) {
